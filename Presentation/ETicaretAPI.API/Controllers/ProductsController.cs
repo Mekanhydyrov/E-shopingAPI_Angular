@@ -1,9 +1,11 @@
 ﻿using ETicaretAPI.Application.Abstractions;
 using ETicaretAPI.Application.Repositories;
 using ETicaretAPI.Application.Repositories.ViewModels.Products;
+using ETicaretAPI.Application.RequestParameters;
 using ETicaretAPI.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 using System.Net;
 
 namespace ETicaretAPI.API.Controllers
@@ -15,16 +17,31 @@ namespace ETicaretAPI.API.Controllers
         readonly private IProductWriteRepository _productWriteRepository;
         readonly private IProductReadRepository _productReadRepository;
 
-        public ProductsController(IProductReadRepository productReadRepository,IProductWriteRepository productWriteRepository)
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
         }
 
         [HttpGet]
-        public async Task<IActionResult>Get()
+        public async Task<IActionResult> Get([FromQuery] Pagination pagination)
         {
-            return Ok(_productReadRepository.GetAll(false));
+            var totalCount = _productReadRepository.GetAll(false).Count();
+            var products = _productReadRepository.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size).Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Stock,
+                p.Price,
+                p.CreatedDate,
+                p.UpdatedDate
+            }).OrderByDescending(c => c.CreatedDate).ToList();
+
+            return Ok(new
+            {
+                totalCount,
+                products,
+            });
         }
 
         [HttpGet("{id}")]

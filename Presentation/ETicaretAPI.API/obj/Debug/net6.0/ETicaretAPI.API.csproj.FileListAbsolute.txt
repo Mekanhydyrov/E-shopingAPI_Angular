@@ -59,3 +59,8 @@ D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\ne
 D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
 D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
 D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.dll
+D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastructrue.dll
+D:\.Net\ETicaretUygulamasi\ETicaretAPI\Presentation\ETicaretAPI.API\bin\Debug\net6.0\ETicaretAPI.Infrastructrue.pdb

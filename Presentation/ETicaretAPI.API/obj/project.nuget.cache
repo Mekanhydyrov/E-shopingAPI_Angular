@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "cZU1qrNNAtAb5C6Iem0bjoFsoQ6UA46KYLpVV/71zS+yV8mnNq+7PMAx3G6bcJHeiQCah67fTtpaIEEHtFN64w==",
+  "dgSpecHash": "MPSbysdXlFE83HEVUpv6uuAxhzhVCgH7buOn0j/EuJM8QECa7hNo6lQTcAbalRTAfrDqBtUQv121hDOBAYgZ6Q==",
   "success": true,
   "projectFilePath": "D:\\.Net\\ETicaretUygulamasi\\ETicaretAPI\\Presentation\\ETicaretAPI.API\\ETicaretAPI.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mekan\\.nuget\\packages\\fluentvalidation\\11.4.0\\fluentvalidation.11.4.0.nupkg.sha512",
+    "C:\\Users\\Mekan\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Mekan\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.4.0\\fluentvalidation.dependencyinjectionextensions.11.4.0.nupkg.sha512",
     "C:\\Users\\Mekan\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Mekan\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.0\\microsoft.entityframeworkcore.7.0.0.nupkg.sha512",
     "C:\\Users\\Mekan\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.0\\microsoft.entityframeworkcore.abstractions.7.0.0.nupkg.sha512",
